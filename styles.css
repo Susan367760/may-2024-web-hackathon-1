@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #ffcc00, #ff6600, #ff3399, #cc00ff, #0066ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Header Styles */
+header {
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient from purple to blue */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); /* Custom shape */
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Personal Info Section Styles */
+#personal-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.profile div {
+  flex: 1;
+}
+
+/* Content Styles */
+section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Text Color */
+section h2,
+section p {
+  color: #fff; /* White text color */
+}
+
+
+
+
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Profile Section Styles */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+/* Portfolio Styles */
+#portfolio .project {
+  margin-bottom: 2rem;
+}
+
+#portfolio .project img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Skills Styles */
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  background: #3498db;
+  color: #fff;
+  display: inline-block;
+  margin: 0 5px 10px 0;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Experience and Education Styles */
+.job, .education-item {
+  margin-bottom: 1.5rem;
+}
+
+.job h3, .education-item h3 {
+  margin: 0;
+}
+
+/* Footer Styles */
+footer {
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
